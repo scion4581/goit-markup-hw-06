@@ -313,8 +313,10 @@
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                 </p>
               </div>
-              <h3 class="portfolio-list-item-title">Banking App</h3>
-              <p class="portfolio-list-item-text">App</p>
+              <div class="portfolio-list-item-text-wrapper">
+                  <h3 class="portfolio-list-item-title">Banking App</h3>
+                  <p class="portfolio-list-item-text">App</p>
+              </div>              
             </li>
             <li class="portfolio-list-item">
               <div class="portfolio-list-item-cover-wrapper">
@@ -329,8 +331,10 @@
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                 </p>
               </div>
-              <h3 class="portfolio-list-item-title">Cashless Payment</h3>
-              <p class="portfolio-list-item-text">Marketing</p>
+              <div class="portfolio-list-item-text-wrapper">
+                <h3 class="portfolio-list-item-title">Cashless Payment</h3>
+                <p class="portfolio-list-item-text">Marketing</p>
+              </div>              
             </li>
             <li class="portfolio-list-item">
               <div class="portfolio-list-item-cover-wrapper">
@@ -345,8 +349,10 @@
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                 </p>
               </div>
-              <h3 class="portfolio-list-item-title">Meditation App</h3>
-              <p class="portfolio-list-item-text">App</p>
+              <div class="portfolio-list-item-text-wrapper">
+                <h3 class="portfolio-list-item-title">Meditation App</h3>
+                <p class="portfolio-list-item-text">App</p>
+              </div>            
             </li>
             <li class="portfolio-list-item">
               <div class="portfolio-list-item-cover-wrapper">
@@ -361,8 +367,10 @@
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                 </p>
               </div>
-              <h3 class="portfolio-list-item-title">Taxi Service</h3>
-              <p class="portfolio-list-item-text">Marketing</p>
+              <div class="portfolio-list-item-text-wrapper">
+                <h3 class="portfolio-list-item-title">Taxi Service</h3>
+                <p class="portfolio-list-item-text">Marketing</p>
+              </div>              
             </li>
             <li class="portfolio-list-item">
               <div class="portfolio-list-item-cover-wrapper">
@@ -377,8 +385,10 @@
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                 </p>
               </div>
-              <h3 class="portfolio-list-item-title">Screen Illustrations</h3>
-              <p class="portfolio-list-text">Design</p>
+              <div class="portfolio-list-item-text-wrapper">
+                <h3 class="portfolio-list-item-title">Screen Illustrations</h3>
+                <p class="portfolio-list-item-text">Design</p>
+              </div>              
             </li>
             <li class="portfolio-list-item">
               <div class="portfolio-list-item-cover-wrapper">
@@ -392,8 +402,10 @@
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                 </p>
               </div>
-              <h3 class="portfolio-list-item-title">Online Courses</h3>
-              <p class="portfolio-list-text">Marketing</p>
+              <div class="portfolio-list-item-text-wrapper">
+                <h3 class="portfolio-list-item-title">Online Courses</h3>
+                <p class="portfolio-list-item-text">Marketing</p>
+              </div>              
             </li>
           </ul>
         </div>
@@ -443,7 +455,7 @@
         </div>
         <div class="subscribtion-section">
             <p class="footer-section-title footer-subscribtion-section-title">Subscribe</p>
-            <form name="subscribtion-form">
+            <form class="subscribtion-form" name="subscribtion-form">
                 <label for="subscribe_user_email">
                   <input class="subscribe_user_email" type="email" name="subscribe_user_email" id="subscribe_user_email"/>
                 </label>
@@ -457,6 +469,61 @@
         </div>
       </div>
     </footer>
-    
+    <div class="backdrop is-open">
+      <div class="modal">
+        <button class="modal-close-btn" type="button" aria-label="modal close buttom">
+          <svg class="modal-close-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="feedback-form-description">Leave your contacts and we will call you back</p>
+        <form class="feedback-form">
+          <div class="feedback-form-field-wrapper">
+            <label class="feedback-form-field-label" for="feedback-form-name-field" >Name</label>
+            <div class="feedback-form-field-input-wrapper">
+               <input class="feedback-form-field" id="feedback-form-name-field" type="text" name="feedback-form-user-name" title="Name"/>
+               <svg class="feedback-form-field-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person"></use>
+               </svg> 
+            </div>
+          </div>
+          <div class="feedback-form-field-wrapper">
+            <label class="feedback-form-field-label" for="feedback-form-phone-field" >Phone</label>
+            <div class="feedback-form-field-input-wrapper">
+              <input class="feedback-form-field" id="feedback-form-phone-field" type="tel" name="feedback-form-user-phone" title="Phone"/>
+              <svg class="feedback-form-field-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone"></use>
+               </svg>
+            </div>            
+          </div>
+          <div class="feedback-form-field-wrapper">
+            <label class="feedback-form-field-label" for="feedback-form-email-field" >Email</label>
+            <div class="feedback-form-field-input-wrapper">
+              <input id="feedback-form-email-field" type="email" class="feedback-form-field" name="feedback-form-user-email" title="Email"/>
+                <svg class="feedback-form-field-icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-email"></use>
+               </svg>
+            </div>            
+          </div>
+          <div class="feedback-form-field-wrapper">
+            <label for="feedback-form-comment-field" class="feedback-form-field-label">Comment</label>
+            <textarea class="feedback-form-comment-field" type="text" placeholder="Text input" name="feedback-form-user-comment" id="feedback-form-comment-field" title="Comment"></textarea>
+          </div>
+          <div class="feedback-form-checkbox-wrapper">                    
+            <input class="feedback-form-privacy-policy-checkbox visually-hidden" id="feedback-form-privacy-policy-field" type="checkbox" name="feedback-form-privacy-policy" title="Privacy Policy" required/>
+            <label class="feedback-form-field-label" for="feedback-form-privacy-policy-field">
+              <span class="feedback-form-privacy-policy-checkbox-icon-wrapper">
+                <svg class="feedback-form-privay-policy-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the 
+                <a class="feedback-form-privacy-policy-link" href="#" >Privacy Policy</a>
+            </label>
+          </div>
+          <button class="feedback-form-send-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
