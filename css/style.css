@@ -628,6 +628,10 @@ a {
     line-height: 0;
 }
 
+.feedback-form input {
+    background-color: transparent;
+}
+
 .feedback-form-field-wrapper {
     margin-bottom: 8px;
 }
@@ -703,7 +707,7 @@ a {
     padding: 8px 16px;
     font-size: 12px;
     font-weight: 400;
-    line-height: 1.16;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
     background-color: transparent;
