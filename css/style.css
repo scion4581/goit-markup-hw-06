@@ -594,6 +594,7 @@ a {
     border-radius: 4px;
     padding: 72px 24px 24px 24px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .modal-close-btn {
@@ -609,7 +610,6 @@ a {
     right: 24px;
     position: absolute;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .modal-close-btn:hover,  .modal-close-btn:focus {
@@ -684,7 +684,7 @@ a {
     position: absolute;
     top: 50%;
     left: 16px;
-    transform: translateY(-50%);
+    transform: translateY(-50%);    
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -736,7 +736,7 @@ a {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.feedback-form-privacy-policy-checkbox:checked + .feedback-form-field-label .feedback-form-privacy-policy-checkbox-icon-wrapper {
+.feedback-form-privacy-policy-checkbox:checked + .feedback-form-field-label > .feedback-form-privacy-policy-checkbox-icon-wrapper {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
