@@ -687,7 +687,7 @@ screen and (min-device-pixel-ratio: 2) {
     transform: translate(-50%, -50%);
     position: absolute;
     border-radius: 4px;
-    padding: 72px 24px 24px 24px;
+    padding: 72px 16px 24px 16px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -745,7 +745,8 @@ screen and (min-device-pixel-ratio: 2) {
 }
 
 .feedback-form-field-label {
-    display: block;
+    display: flex;
+    align-items: center;
     color: #8E8F99;
     font-size: 12px;
     font-weight: 400;
@@ -807,7 +808,6 @@ screen and (min-device-pixel-ratio: 2) {
     font-weight: 400;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: rgba(46, 47, 66, 0.4);
     background-color: transparent;
     resize: none;
 }
@@ -821,11 +821,11 @@ screen and (min-device-pixel-ratio: 2) {
 }
 
 .feedback-form-privacy-policy-checkbox-icon-wrapper {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
-    width: 16px;
+    width: 20px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
