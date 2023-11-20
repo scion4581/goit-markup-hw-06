@@ -262,7 +262,7 @@ a {
         /* ================ /BURGER STYLES ================ */
 }
 
- /* ================ HERO SECTION STYLES ================ */
+ /* ================ MOBILE HERO SECTION STYLES ================ */
 
 .hero {
     background-color: #2E2F42;
@@ -272,7 +272,6 @@ a {
     background-repeat: no-repeat;
     padding-bottom: 72px;
     padding-top: 72px;
-    max-width: 320px;
     margin: 0 auto;
 }
 
@@ -323,10 +322,10 @@ screen and (min-device-pixel-ratio: 2) {
     background-color: #404BBF;
 }
 
- /* ================ /HERO SECTION STYLES ================ */
+ /* ================ /MOBILE HERO SECTION STYLES ================ */
 
 
-/* ================ FEATURES SECTION STYLES ================ */
+/* ================ MOBILE FEATURES SECTION STYLES ================ */
 
 
 .features-list {
@@ -357,7 +356,7 @@ screen and (min-device-pixel-ratio: 2) {
 /* ================ /FEATURES SECTION STYLES ================ */
 
 
-/* ================ TEAM SECTION STYLES ================ */
+/* ================ MOBILE TEAM SECTION STYLES ================ */
 
 .team {
     background-color: #F4F4FD;
@@ -371,9 +370,8 @@ screen and (min-device-pixel-ratio: 2) {
 .team-list {
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 72px;
     flex-direction: column;
-    
 }
 
 .team-list-item {
@@ -429,10 +427,10 @@ screen and (min-device-pixel-ratio: 2) {
 }
 
 
-/* ================ /TEAM SECTION STYLES ================ */
+/* ================ /MOBILE TEAM SECTION STYLES ================ */
 
 
-/* ================ PORTFOLIO SECTION STYLES ================ */
+/* ================ MONBILE PORTFOLIO SECTION STYLES ================ */
 
 /* h2 */
 .portfolio-title {
@@ -442,8 +440,7 @@ screen and (min-device-pixel-ratio: 2) {
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px;
+    gap: 48px;
 }
 
 .portfolio-list-item {
@@ -500,10 +497,10 @@ screen and (min-device-pixel-ratio: 2) {
     padding: 0 16px;
 }
 
-/* ================ /PORTFOLIO SECTION STYLES ================ */
+/* ================ /MOBILE PORTFOLIO SECTION STYLES ================ */
 
 
-/* ================ FOOTER SECTION STYLES ================ */
+/* ================ MOBILE FOOTER SECTION STYLES ================ */
 
 .footer-section-title {
     font-family: "Roboto", sans-serif;
@@ -646,7 +643,7 @@ screen and (min-device-pixel-ratio: 2) {
 }
 
 
-/* ================ /FOOTER SECTION STYLES ================ */
+/* ================ /MOBILE FOOTER SECTION STYLES ================ */
 
 
 /* ================ BACKDROP STYLES ================ */
@@ -676,7 +673,7 @@ screen and (min-device-pixel-ratio: 2) {
 /* ================ /BACKDROP STYLES ================ */
 
 
-/* ================ MODAL STYLES ================ */
+/* ================ MOBILE MODAL STYLES ================ */
 
 .modal {
     width: 288px;
@@ -861,7 +858,7 @@ screen and (min-device-pixel-ratio: 2) {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ================ /MODAL STYLES ================ */
+/* ================ /MOBILE MODAL STYLES ================ */
 
 /* ================ /MOBILE STYLES ================ */
 
@@ -884,9 +881,60 @@ screen and (min-device-pixel-ratio: 2) {
         width: 768px;
     }
 
+    /* ================ TABLET HEADER STYLES ================ */
+
+    .page-navigation {
+        display: flex;
+        align-items: center;
+    }
+
+    .logotype {
+        margin-right: 120px;
+    }
+
     .menu {
         display: flex;
         gap: 40px;
+    }
+
+    .menu-link {
+        color: #2E2F42;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        padding: 24px 0 24px;
+        position: relative;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .menu-item:first-child .menu-link {
+        color: #404bbf;
+    }
+
+    .menu-link:hover,
+    .menu-link:focus {
+        color: #404BBF;
+    }
+
+    .menu-link::after,
+    .menu-link::after {
+        content: "";
+        width: 100%;
+        height: 4px;
+        background: #404BBF;
+        display: inline-block;
+        border-radius: 2px;
+        position: absolute;
+        bottom: -13px;
+        left: 0;
+        transition: opacity 0.4s ease;
+        opacity: 0;
+    }
+
+    .menu-link:hover::after,
+    .menu-link:focus::after {
+        opacity: 1;
     }
 
     .contacts {
@@ -899,13 +947,193 @@ screen and (min-device-pixel-ratio: 2) {
         flex-direction: column;
     }
 
+    .contact-link {
+        color: #434455;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .contact-link:hover,
+    .contact-link:focus {
+        color: #404BBF;
+    }
+
     /* ================ /TABLET HEADER STYLES ================ */
 
+    /* ================ TABLET HERO SECTION STYLES ================ */
+
+    .hero {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url("../images/hero-bg-tablet.jpg");
+        padding-bottom: 112px;
+        padding-top: 112px;
+    }
+
+    @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+        .hero {
+            background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url("../images/hero-bg-tablet@2x.jpg");
+        }
+    }
+
+    .main-title {
+        max-width: 360px;
+    }
+
+    /* ================ /TABLET HERO SECTION STYLES ================ */
+
+    /* ================ /TABLET HEADER STYLES ================ */
+
+    .features-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 24px;
+        row-gap: 72px;
+    }
+
+    .features-list-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    /* ================ TABLET TEAM SECTION STYLES ================ */
+
+    .team-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 64px;
+     }
+
+    /* ================ /TABLET TEAM SECTION STYLES ================ */
+
+    /* ================ TABLET PORTFOLIO SECTION STYLES ================ */
+
+    .portfolio-list {
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+
+    .portfolio-list-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+     /* ================ /TABLET PORTFOLIO SECTION STYLES ================ */
+
+    /* ================ TABLET FOOTER SECTION STYLES ================ */
+
+    .footer-container {
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+        width: 584px;
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .logo-section {
+        text-align: left;
+    }
+
+    .social-section {
+        align-items: flex-start;
+    }
+
+    .subscription-section {
+        width: 100%;
+    }
+
+    .subscribtion-form {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .footer-subscribtion-section-title {
+        text-align: left;
+    }
+
+    .modal {
+        width: 408px;
+        min-height: 584px;
+        padding: 72px 25px 25px 25px;
+    }
+
+    .feedback-form-privacy-policy-checkbox-icon-wrapper {
+        width: 16px;
+    }
+
+    /* ================ /TABLET FOOTER SECTION STYLES ================ */
+}
+    
+/* ================ /TABLET STYLES ================ */
+
+/* ================ /DESKTOP STYLES ================ */
+
+@media screen and (min-width: 1158px) {
+    
+    .container {
+        width: 1158px;
+    }
+
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    /* ================ DESKTOP HEADER STYLES ================ */
+
+    .page-header {
+        padding: 24px 0;
+    }
+
+    .menu-link::after,
+    .menu-link::after {
+        bottom: -3px;
+    }
+
+    .contacts-list {
+        gap: 40px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    /* ================ /DESKTOP HEADER STYLES ================ */
+
+    /* ================ DESKTOP HERO SECTION STYLES ================ */
+
+    .hero {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url("../images/hero-bg-desktop.jpg");
+        padding-bottom: 188px;
+        padding-top: 188px;
+        max-width: 1158px;
+    }
+
+    @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+        .hero {
+            background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url("../images/hero-bg-desktop@2x.jpg");
+        }
+    }
+
+    .main-title {
+        max-width: 376px;
+    }
+
+    /* ================ /DESKTOP HERO SECTION STYLES ================ */
 
 
-    /* ================ /TABLET /HEADER STYLES ================ */
+     /* ================ DESKTOP FUTURES SECTION STYLES ================ */
 
-
+    .features-list {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        gap: 24px;
+    }
 
     .features-list-item {
         width: calc((100% - 3 * 24px) / 4);
@@ -921,13 +1149,54 @@ screen and (min-device-pixel-ratio: 2) {
         height: 112px;
         margin-bottom: 8px;
     }
-}
-    
-/* ================ /TABLET STYLES ================ */
 
-
-@media screen and (min-width: 1158px) {
-    .container {
-        width: 1158px;
+    .features-list-item-title {
+        text-align: left;
+        margin-bottom: 8px;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
     }
+
+    .features-list-item-text {
+        text-align: left;
+        font-weight: 400;
+    }
+
+     /* ================ DESKTOP FUTURES SECTION STYLES ================ */
+
+
+    /* ================ DESKTOP TEAM SECTION STYLES ================ */
+
+    .team-list {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+
+    /* ================ /DESKTOP TEAM SECTION STYLES ================ */
+
+
+    /* ================ DESKTOP PORTFOLIO SECTION STYLES ================ */
+    .portfolio-list {
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 48px;
+    }
+
+    .portfolio-list-item {
+        width: calc((100% - 2*24px) / 3);
+    }
+
+    /* ================ /DESKTOP PORTFOLIO SECTION STYLES ================ */
+
+    /* ================ DESKTOP FOOTER STYLES ================ */
+    .footer-container {
+        justify-content: space-between;
+    }
+    /* ================ /DESKTOP FOOTER STYLES ================ */
 }
+
+/* ================ /DESKTOP STYLES ================ */
