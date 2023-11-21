@@ -155,7 +155,7 @@ a {
 .container {
     padding-left: 16px;
     padding-right: 16px;
-    width: 320px;
+    max-width: 320px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -878,7 +878,7 @@ screen and (min-device-pixel-ratio: 2) {
     }
 
     .container {
-        width: 768px;
+        max-width: 768px;
     }
 
     /* ================ TABLET HEADER STYLES ================ */
@@ -1076,7 +1076,7 @@ screen and (min-device-pixel-ratio: 2) {
 @media screen and (min-width: 1158px) {
     
     .container {
-        width: 1158px;
+        max-width: 1158px;
     }
 
     .section {
