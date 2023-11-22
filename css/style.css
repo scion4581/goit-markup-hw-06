@@ -206,6 +206,10 @@ a {
             padding: 72px 16px 40px 16px;
             position: relative;
         }
+
+        .burger-menu-item:first-child .burger-menu-link {
+            color: #404bbf;
+        }
     
         .burger-menu-links {
             display: flex;
@@ -218,7 +222,7 @@ a {
             font-size: 36px;
             font-style: normal;
             font-weight: 700;
-            line-height: 0.028;
+            line-height: 1.11;
             letter-spacing: 0.02em;
             text-transform: capitalize;
             color: #2E2F42;
@@ -230,6 +234,10 @@ a {
             color: #404BBF;
         }
     
+        .burger-menu-contact-item:first-child .burger-menu-contact-link {
+            color: #404BBF;
+        }
+
         .burger-menu-contact-link {
             font-family: "Roboto", sans-serif;
             font-size: 20px;
@@ -240,7 +248,7 @@ a {
             color: #434455;
             transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
-    
+
         .burger-menu-contact-link:hover,
         .burger-menu-contact-link:focus {
             color: #4D5AE5;
@@ -273,6 +281,7 @@ a {
     padding-bottom: 72px;
     padding-top: 72px;
     margin: 0 auto;
+    max-width: 320px;
 }
 
 @media screen and (max-width: 767px) and (min-resolution: 192dpi),
@@ -290,7 +299,7 @@ screen and (min-device-pixel-ratio: 2) {
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    max-width: 156px;
+    width: 212px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -351,9 +360,10 @@ screen and (min-device-pixel-ratio: 2) {
 /* p */
 .features-list-item-text {
     text-align: left;
+    font-weight: 500;
 }
 
-/* ================ /FEATURES SECTION STYLES ================ */
+/* ================ /MOBILE FEATURES SECTION STYLES ================ */
 
 
 /* ================ MOBILE TEAM SECTION STYLES ================ */
@@ -375,6 +385,7 @@ screen and (min-device-pixel-ratio: 2) {
 }
 
 .team-list-item {
+    width: 264px;
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -917,7 +928,6 @@ screen and (min-device-pixel-ratio: 2) {
         color: #404BBF;
     }
 
-    .menu-link::after,
     .menu-link::after {
         content: "";
         width: 100%;
@@ -930,6 +940,10 @@ screen and (min-device-pixel-ratio: 2) {
         left: 0;
         transition: opacity 0.4s ease;
         opacity: 0;
+    }
+
+    .menu-item:first-child .menu-link::after {
+        opacity: 1;
     }
 
     .menu-link:hover::after,
@@ -952,6 +966,7 @@ screen and (min-device-pixel-ratio: 2) {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
+        font-style: normal;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
@@ -968,6 +983,7 @@ screen and (min-device-pixel-ratio: 2) {
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url("../images/hero-bg-tablet.jpg");
         padding-bottom: 112px;
         padding-top: 112px;
+        max-width: 768px;
     }
 
     @media screen and (min-resolution: 192dpi),
@@ -979,7 +995,12 @@ screen and (min-device-pixel-ratio: 2) {
     }
 
     .main-title {
-        max-width: 360px;
+        width: 496px;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
     }
 
     /* ================ /TABLET HERO SECTION STYLES ================ */
@@ -997,6 +1018,10 @@ screen and (min-device-pixel-ratio: 2) {
 
     .features-list-item {
         width: calc((100% - 24px) / 2);
+    }
+
+    .features-list-item-title {
+        text-align: left;
     }
 
     /* ================ TABLET TEAM SECTION STYLES ================ */
@@ -1121,7 +1146,7 @@ screen and (min-device-pixel-ratio: 2) {
     }
 
     .main-title {
-        max-width: 376px;
+        width: 496px;
     }
 
     /* ================ /DESKTOP HERO SECTION STYLES ================ */
@@ -1151,7 +1176,6 @@ screen and (min-device-pixel-ratio: 2) {
     }
 
     .features-list-item-title {
-        text-align: left;
         margin-bottom: 8px;
         font-size: 20px;
         font-style: normal;
