@@ -1057,7 +1057,7 @@ screen and (min-device-pixel-ratio: 2) {
         flex-wrap: wrap;
         column-gap: 24px;
         row-gap: 72px;
-        width: 584px;
+        max-width: 584px;
         flex-direction: row;
         align-items: baseline;
     }
@@ -1221,6 +1221,7 @@ screen and (min-device-pixel-ratio: 2) {
     /* ================ DESKTOP FOOTER STYLES ================ */
     .footer-container {
         justify-content: space-between;
+        
     }
     /* ================ /DESKTOP FOOTER STYLES ================ */
 }
